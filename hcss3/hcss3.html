@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hcss3</title>
+    <style>
+        div a{
+            text-decoration: none;
+            color: black;
+            border: 3px solid green;
+      font-size: 20px;
+      display: inline-block; 
+            width: 200px; 
+            height: 100px; 
+            text-align: center;
+            line-height: 100px;
+        }
+        div a:hover{
+            text-decoration: none;
+            color: white;
+            background-color: green;
+            border: 3px solid green;
+      font-size: 20px;
+        }
+        div ul{
+            list-style-type: square;
+            color: orange;
+            width: 300px;
+            height: 55px;
+            background-color: yellow;
+        }
+        div ul li {
+    color: black;
+}
+div ul li::marker {
+    color: orange; 
+}
+/* div img{
+    width: 100px;
+    width: 100px;
+    position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+} */
+div img {
+            width: 100; 
+            height: 100px; 
+            position: absolute; 
+            left: 0;
+            top: 0;
+            z-index: -1; 
+        }
+        div {
+            position: relative; 
+        }
+        h1, p {
+            position: relative; 
+            z-index: 1; 
+        }
+    </style>
+</head>
+<body>
+    <div>    
+    <a href="#">This is a link</a>
+</div>
+<br><br>
+<div>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+</div>
+<br><br><br><br>
+<div>
+    <img src="./media/skyscraper-9226515_1280.jpg" alt="this is a image">
+    <h1>This is a heading</h1>
+    <p>becouse img has a z-index of -1,....</p>
+</div>
+</body>
+</html>
